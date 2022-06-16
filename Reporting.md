@@ -1,0 +1,4 @@
+| **Reporting** | **kibana+elasic** | **kibana+elasic (Basic)** | **kibana+elasic (Gold)** | **kibana+elasic (Platinum)** | **kibana+elasic (Enterprise)** | **grafana+elastic** | **grafana+graphite** | **grafana+influex DB** | **Prometheus** |
+|---------------|-------------------|---------------------------|--------------------------|------------------------------|--------------------------------|---------------------|----------------------|------------------------|----------------|
+| **CVS**       | NO                | YES                       | YES                      | YES                          | YES                            | NO                  | NO                   | NO                     | NO             |
+| **PDF**       | NO                | NO                        | YES                      | YES                          | YES                            | NO                  | NO                   | NO                     | NO             |
