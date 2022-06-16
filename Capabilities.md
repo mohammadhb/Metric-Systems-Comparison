@@ -1,3 +1,5 @@
+# Capabilities
+
 |                                    | kibana+elasic                                 | kibana+elasic (Basic)                         | kibana+elasic (Gold)                          | kibana+elasic (Platinum)                      | kibana+elasic (Enterprise)                    | grafana+elastic            | grafana+graphite     | grafana+influex DB   | Prometheus             |
 |------------------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|----------------------------|----------------------|----------------------|------------------------|
 | Explore and searching data         | YES                                           | YES                                           | YES                                           | YES                                           | YES                                           | NO                         | NO                   | NO                   | YES ( by Query )       |
@@ -28,3 +30,58 @@
 | Upgrade Assistant APIs & UI        | NO                                            | YES                                           | YES                                           | YES                                           | YES                                           | NO                         | NO                   | NO                   | NO                     |
 | Logstash pipeline management       | NO                                            | NO                                            | YES                                           | YES                                           | YES                                           | NO                         | NO                   | NO                   | NO                     |
 | Plugins                            | YES                                           | YES                                           | YES                                           | YES                                           | YES                                           | YES + Paid                 | YES + Paid           | YES + Paid           | NO                     |
+
+
+# Alerting
+
+| **Alerting**        | **kibana+elasic** | **kibana+elasic (Basic)** | **kibana+elasic (Gold)** | **kibana+elasic (Platinum)** | **kibana+elasic (Enterprise)** | **grafana+elastic** | **grafana+graphite** | **grafana+influex DB** | **Prometheus** |
+|---------------------|-------------------|---------------------------|--------------------------|------------------------------|--------------------------------|---------------------|----------------------|------------------------|----------------|
+| **Email**           | NO                | NO                        | YES                      | YES                          | YES                            | NO                  | NO                   | NO                     | YES            |
+| **webhook**         | NO                | NO                        | YES                      | YES                          | YES                            | YES                 | YES                  | YES                    | YES            |
+| **Slack**           | NO                | NO                        | YES                      | YES                          | YES                            | YES                 | YES                  | YES                    | YES            |
+| **Pagerduty**       | NO                | NO                        | YES                      | YES                          | YES                            | YES                 | YES                  | YES                    | YES            |
+| **Jira**            | NO                | NO                        | YES                      | YES                          | YES                            | NO                  | NO                   | NO                     | NO             |
+| **Pushover**        | NO                | NO                        | NO                       | NO                           | NO                             | YES                 | YES                  | YES                    | YES            |
+| **DingDing**        | NO                | NO                        | NO                       | NO                           | NO                             | YES                 | YES                  | YES                    | NO             |
+| **LINE**            | NO                | NO                        | NO                       | NO                           | NO                             | YES                 | YES                  | YES                    | NO             |
+| **Telegram**        | NO                | NO                        | NO                       | NO                           | NO                             | YES                 | YES                  | YES                    | NO             |
+| **Sensu**           | NO                | NO                        | NO                       | NO                           | NO                             | YES                 | YES                  | YES                    | NO             |
+| **HipChat**         | NO                | NO                        | NO                       | NO                           | NO                             | YES                 | YES                  | YES                    | YES            |
+| **Threema Gateway** | NO                | NO                        | NO                       | NO                           | NO                             | YES                 | YES                  | YES                    | NO             |
+| **VictorOps**       | NO                | NO                        | NO                       | NO                           | NO                             | YES                 | YES                  | YES                    | YES            |
+
+# Export/Import
+
+| **Reporting**         | **kibana+elasic**   | **kibana+elasic (Basic)** | **kibana+elasic (Gold)** | **kibana+elasic (Platinum)** | **kibana+elasic (Enterprise)** | **grafana+elastic**                | **grafana+graphite**               | **grafana+influex DB**             | **Prometheus** |
+|-----------------------|---------------------|---------------------------|--------------------------|------------------------------|--------------------------------|------------------------------------|------------------------------------|------------------------------------|----------------|
+| **Databases**         | NO                  | NO                        | NO                       | NO                           | NO                             | NO                                 | NO                                 | NO                                 | YES            |
+| **Hardware related**  | NO                  | NO                        | NO                       | NO                           | NO                             | NO                                 | NO                                 | NO                                 | YES            |
+| **Messaging systems** | NO                  | NO                        | NO                       | NO                           | NO                             | NO                                 | NO                                 | NO                                 | YES            |
+| **Storage**           | NO                  | NO                        | NO                       | NO                           | NO                             | NO                                 | NO                                 | NO                                 | YES            |
+| **Http**              | NO                  | NO                        | NO                       | NO                           | NO                             | NO                                 | NO                                 | NO                                 | YES            |
+| **APIs**              | NO                  | NO                        | NO                       | NO                           | NO                             | NO                                 | NO                                 | NO                                 | YES            |
+| **Logging**           | YES ( Excle + csv ) | YES ( Excle + csv )       | YES ( Excle + csv )      | YES ( Excle + csv )          | YES ( Excle + csv )            | YES ( JSON + Link + as Snapshots ) | YES ( JSON + Link + as Snapshots ) | YES ( JSON + Link + as Snapshots ) | YES            |
+
+
+# Security
+
+| Security                                      | kibana+elasic | kibana+elasic (Basic) | kibana+elasic (Gold) | kibana+elasic (Platinum) | kibana+elasic (Enterprise) | grafana+elastic  | grafana+graphite | grafana+influex DB | Prometheus            |
+|-----------------------------------------------|---------------|-----------------------|----------------------|--------------------------|----------------------------|------------------|------------------|--------------------|-----------------------|
+| Encrypted communications                      | NO            | NO                    | YES                  | YES                      | YES                        | YES ( with NginX | YES ( with NginX | YES ( with NginX   | YES ( with NginX      |
+| Active Directory authentication               | NO            | NO                    | YES                  | YES                      | YES                        | NO               | NO               | NO                 | NO                    |
+| Rest level Encryption                         | NO            | NO                    | NO                   | YES                      | YES                        | NO               | NO               | NO                 | NO                    |
+| Role-Based Access                             | NO            | NO                    | YES                  | YES                      | YES                        | YES              | YES              | YES                | NO                    |
+| Native, LDAP, Active Directory authentication | NO            | NO                    | YES                  | YES                      | YES                        | NO               | NO               | NO                 | YES ( with openLDAP ) |
+| SAML authentication                           | NO            | NO                    | NO                   | YES                      | YES                        | NO               | NO               | NO                 | NO                    |
+| Audit logging                                 | NO            | NO                    | YES                  | YES                      | YES                        | NO               | NO               | NO                 | NO                    |
+| Field- and document-level security            | NO            | NO                    | NO                   | YES                      | YES                        | NO               | NO               | NO                 | NO                    |
+| Third-party integrations (custom realms)      | NO            | NO                    | NO                   | YES                      | YES                        | ?                | ?                | ?                  | ?                     |
+
+# Reporting
+
+| **Reporting** | **kibana+elasic** | **kibana+elasic (Basic)** | **kibana+elasic (Gold)** | **kibana+elasic (Platinum)** | **kibana+elasic (Enterprise)** | **grafana+elastic** | **grafana+graphite** | **grafana+influex DB** | **Prometheus** |
+|---------------|-------------------|---------------------------|--------------------------|------------------------------|--------------------------------|---------------------|----------------------|------------------------|----------------|
+| **CVS**       | NO                | YES                       | YES                      | YES                          | YES                            | NO                  | NO                   | NO                     | NO             |
+| **PDF**       | NO                | NO                        | YES                      | YES                          | YES                            | NO                  | NO                   | NO                     | NO             |
+
+
