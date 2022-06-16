@@ -60,7 +60,7 @@
 
 # Export/Import
 
-| **Reporting**         | **kibana+elasic**   | **kibana+elasic (Basic)** | **kibana+elasic (Gold)** | **kibana+elasic (Platinum)** | **kibana+elasic (Enterprise)** | **grafana+elastic**                | **grafana+graphite**               | **grafana+influex DB**             | **Prometheus** |
+|         | **kibana+elasic**   | **kibana+elasic (Basic)** | **kibana+elasic (Gold)** | **kibana+elasic (Platinum)** | **kibana+elasic (Enterprise)** | **grafana+elastic**                | **grafana+graphite**               | **grafana+influex DB**             | **Prometheus** |
 |-----------------------|---------------------|---------------------------|--------------------------|------------------------------|--------------------------------|------------------------------------|------------------------------------|------------------------------------|----------------|
 | **Databases**         | NO                  | NO                        | NO                       | NO                           | NO                             | NO                                 | NO                                 | NO                                 | YES            |
 | **Hardware related**  | NO                  | NO                        | NO                       | NO                           | NO                             | NO                                 | NO                                 | NO                                 | YES            |
